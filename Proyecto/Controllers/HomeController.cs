@@ -13,7 +13,7 @@ namespace Proyecto.Controllers
 
         public ActionResult Index()
         {
-            List<Vuelo> model = ModeloVuelo.getInstancia().lista();
+            List<Vuelo> model = ModeloVuelo.getInstancia().lista(); 
             return View(model);
         }
         public ActionResult Indice()
