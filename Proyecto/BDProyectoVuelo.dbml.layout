@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.25" name="BDProyectoVuelo">
+  <DataContextMoniker Name="/Conexion" />
+  <nestedChildShapes>
+    <classShape Id="cfa5150a-7cc3-4381-8016-be3b53e131c8" absoluteBounds="0.5, 3.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Conexion/Aerolinea" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99d46884-7a77-4582-a755-ed615ab4bdc3" absoluteBounds="0.515, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="412b25a0-b298-4f9c-abb8-d7a534d2fdff" absoluteBounds="6, 3.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/Conexion/Asiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d77c8974-6e65-44e7-9973-5e18d169f99c" absoluteBounds="6.015, 3.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6708358-7390-4cdb-9e22-12c3b837dda4" absoluteBounds="3.25, 3.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Conexion/Avion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6c65bc9-5ede-472f-a0da-09795bdc7866" absoluteBounds="3.265, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9967147-df11-4f25-af9d-8a83df315dbe" absoluteBounds="8.75, 4, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/Conexion/Boleto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3db8028-cabd-4280-902a-62b199cbe1c1" absoluteBounds="8.765, 4.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d10d293d-48f4-4fe1-a093-f3e8d95a25bf" absoluteBounds="0.5, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/Conexion/Rol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98620898-e794-4c79-a689-8a794aebea84" absoluteBounds="0.515, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7bdb108-538e-47c9-90cb-e901fa384524" absoluteBounds="3.25, 0.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/Conexion/TipoAsiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54503c9a-6819-4e7b-a090-80dbe57635c7" absoluteBounds="3.265, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1baec3d-4bba-498b-b149-2435791afde2" absoluteBounds="3.25, 8, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/Conexion/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a8dc30d-698e-468f-9894-57a611fe9c0a" absoluteBounds="3.265, 8.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a17f3af1-f408-4fcc-8ca9-7a3d9311dd96" absoluteBounds="6, 5.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/Conexion/Vuelo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dae2bdb5-c525-4789-ac1a-9edd086aadba" absoluteBounds="6.015, 6.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 4.06814697265625); (6 : 4.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Avion/Avion_Asiento" />
+      <nodes>
+        <classShapeMoniker Id="b6708358-7390-4cdb-9e22-12c3b837dda4" />
+        <classShapeMoniker Id="412b25a0-b298-4f9c-abb8-d7a534d2fdff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 4.06814697265625); (3.25 : 4.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Aerolinea/Aerolinea_Avion" />
+      <nodes>
+        <classShapeMoniker Id="cfa5150a-7cc3-4381-8016-be3b53e131c8" />
+        <classShapeMoniker Id="b6708358-7390-4cdb-9e22-12c3b837dda4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 4.54409912109375); (8.75 : 4.54409912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Asiento/Asiento_Boleto" />
+      <nodes>
+        <classShapeMoniker Id="412b25a0-b298-4f9c-abb8-d7a534d2fdff" />
+        <classShapeMoniker Id="a9967147-df11-4f25-af9d-8a83df315dbe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.25 : 1.09699625651042); (7 : 1.09699625651042); (7 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/TipoAsiento/TipoAsiento_Asiento" />
+      <nodes>
+        <classShapeMoniker Id="e7bdb108-538e-47c9-90cb-e901fa384524" />
+        <classShapeMoniker Id="412b25a0-b298-4f9c-abb8-d7a534d2fdff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 10.0489005533854); (3.25 : 10.0489005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Rol/Rol_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="d10d293d-48f4-4fe1-a093-f3e8d95a25bf" />
+        <classShapeMoniker Id="a1baec3d-4bba-498b-b149-2435791afde2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 6.39985270182292); (8.75 : 6.39985270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Vuelo/Vuelo_Boleto" />
+      <nodes>
+        <classShapeMoniker Id="a17f3af1-f408-4fcc-8ca9-7a3d9311dd96" />
+        <classShapeMoniker Id="a9967147-df11-4f25-af9d-8a83df315dbe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.25 : 4.7612939453125); (4.25 : 6.85659912109375); (6 : 6.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Conexion/Avion/Avion_Vuelo" />
+      <nodes>
+        <classShapeMoniker Id="b6708358-7390-4cdb-9e22-12c3b837dda4" />
+        <classShapeMoniker Id="a17f3af1-f408-4fcc-8ca9-7a3d9311dd96" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

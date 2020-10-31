@@ -1,0 +1,101 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" />Von boayage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />  
+    <link rel="stylesheet" href="../../Resources/template/styles/layout.css" type="text/css" />
+    <script type="text/javascript" src="../../Resources/template/scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../../Resources/template/scripts/jquery.slidepanel.setup.js"></script>
+    <script type="text/javascript" src="../../Resources/template/scripts/jquery.cycle.min.js"></script>
+    <script type="text/javascript" src="../../Resources/template/scripts/jquery.cycle.setup.js"></script>
+
+    
+     
+</head>
+
+<body>
+         <div class="wrapper col0">
+          <div id="topline">
+                  <asp:ContentPlaceHolder ID="Registro" runat="server"/>
+            <div id="search">
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Site Search</legend>
+                  <input type="text" value="Buscar&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+                  <input type="submit" name="go" id="go" value="Buscar" />
+                </fieldset>
+              </form>
+            </div>
+            <br class="clear" />
+          </div>
+        </div>
+    <!-- ####################################################################################################### -->
+
+    <div class="wrapper col1">
+      <div id="header">
+        <div id="topnav">
+           <asp:ContentPlaceHolder ID="Nav" runat="server"/>
+        </div>
+        <div id="logo">
+          <h1><a href="#">Bon Voyage <span><img height="30" width="60"  src="../../Resources/template/images/demo/logotipo.png" alt="" /></span></a></h1>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+<!-- ##############################################SLIDER######################################################### -->
+
+    <div class="wrapper col2">
+         <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    </div>
+
+<!-- ##################################################ABAJO SLIDER##################################################### -->
+
+ <div class="wrapper col3">
+  <div class="container">
+    <div class="content">
+      <div >
+       
+        <asp:ContentPlaceHolder ID="Content" runat="server"/>
+      </div>
+    </div>
+    <div class="column">
+      <div >
+          <asp:ContentPlaceHolder ID="Content2" runat="server"/>
+      </div>
+    </div>  
+    <br class="clear" />
+  </div>
+</div>
+
+
+
+
+<!-- ####################################################LINEAS################################################### -->
+
+
+    <div class="wrapper col4">
+  <div  id="footer">
+    <div >
+      
+         <asp:ContentPlaceHolder ID="Content3" runat="server"/>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+
+<!-- #####################################################FOOOTER################################################## -->
+
+
+    <div class="wrapper col5">
+          <div id="copyright">
+               <p class="fl_left">Copyright  &copy; 2014 Derechos Reservados - <a href="#">informatic-simple-blog.esy.es/index.html</a></p>
+            <br class="clear" />
+          </div>
+    </div>
+</body>
+</html>
